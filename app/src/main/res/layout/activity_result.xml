@@ -6,38 +6,226 @@
     android:layout_height="match_parent"
     tools:context="com.example.tene.zetsushin.result">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="点数"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="N"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toRightOf="@+id/textView4"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/IdView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="点数"
+                    android:textSize="30sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="N"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintLeft_toRightOf="@+id/textView4"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/IdView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:text="正解"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問1"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/q1_image" />
+
+                    <RadioGroup
+                        android:id="@+id/q1_rg_r"
+                        android:layout_width="147dp"
+                        android:layout_height="match_parent"
+                        android:focusable="auto">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@color/colorAccent"
+                            android:text="1.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/q2_image" />
+
+                    <RadioGroup
+                        android:id="@+id/q2_rg_r"
+                        android:layout_width="147dp"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@color/colorAccent"
+                            android:text="1.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
