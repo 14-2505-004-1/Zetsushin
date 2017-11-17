@@ -106,4 +106,10 @@
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="end_text" >問いは以上です。</string>
     <string name="prompt_email">ID</string>
+
+    <string-array name="list">
+    <item>テスト問題1</item>
+    <item>テスト問題2</item>
+    <item>テスト問題3</item>
+    <item>テスト問題4</item></string-array>
 </resources>

@@ -8,24 +8,41 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView4"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="採点結果"
-                android:textSize="36sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="採点結果"
+                    android:textSize="36sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,7 +54,7 @@
                     android:layout_width="157dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="貴方の点数は"
+                    android:text=" 貴方の点数は"
                     android:textSize="30sp" />
 
                 <TextView
@@ -71,6 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30sp" />
+
             <View
                 android:id="@+id/view3_3"
                 android:layout_width="fill_parent"
@@ -90,28 +108,21 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/seikai"
-                        android:textSize="30sp" />
-
-                    <TextView
                         android:id="@+id/IdView"
-                        android:layout_width="34dp"
+                        android:layout_width="251dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
                         android:layout_marginTop="8dp"
                         android:layout_weight="1"
+                        android:background="@color/seikai"
                         android:text="正解"
                         android:textSize="30sp"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
                     <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="165dp"
+                        android:id="@+id/textView22"
+                        android:layout_width="507dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
                 </LinearLayout>
@@ -122,21 +133,26 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/radioButton6"
+                    <TextView
+                        android:id="@+id/textView27"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:textAlignment="textStart"
-                        android:textSize="30sp" />
+                        android:layout_weight="1" />
 
                     <TextView
                         android:id="@+id/textView16"
-                        android:layout_width="242dp"
+                        android:layout_width="277dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="選んだ選択肢"
+                        android:text="と　を見てみましょう"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="390dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
                         android:textSize="30sp" />
                 </LinearLayout>
 
@@ -166,17 +182,29 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="11dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/q1_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="266dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/q1_image" />
 
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <RadioGroup
                         android:id="@+id/q1_rg_r"
-                        android:layout_width="147dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:focusable="auto">
 
                         <RadioButton
@@ -184,7 +212,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:background="@color/seikai"
-                            android:shadowColor="@color/colorAccent"
                             android:text="1.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
@@ -226,6 +253,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/q2"
                 android:layout_width="match_parent"
@@ -251,17 +279,29 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/q2_image"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="259dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/q2_image" />
 
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <RadioGroup
                         android:id="@+id/q2_rg_r"
-                        android:layout_width="147dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
                         <RadioButton
                             android:id="@+id/radioButton_2"
