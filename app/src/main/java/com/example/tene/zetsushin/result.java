@@ -23,8 +23,8 @@ public class result extends AppCompatActivity {
         int q2_a = intent.getIntExtra("q2_answer",0);
 
 
-        if(q1_a==2131230837) sum=sum+50;
-        if(q2_a==2131230846) sum=sum+50;
+        if(q1_a==2131230838) sum=sum+50;
+        if(q2_a==2131230847) sum=sum+50;
 
         TextView ScoreView = (TextView) findViewById(R.id.score);
         ScoreView.setText(String.valueOf(sum));
@@ -62,8 +62,12 @@ public class result extends AppCompatActivity {
         rb_5_2.setEnabled(false);
 
         //TextView IdView = (TextView) findViewById(R.id.IdView);
-        //IdView.setText(String.valueOf(q1_a));
+        //IdView.setText(String.valueOf(q2_a));
 
+
+    }
+    @Override
+    public void onBackPressed(){
 
     }
 

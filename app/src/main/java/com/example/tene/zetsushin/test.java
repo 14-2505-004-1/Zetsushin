@@ -27,6 +27,11 @@ public class test extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed(){
+
+    }
+
     /*
 
     追加
