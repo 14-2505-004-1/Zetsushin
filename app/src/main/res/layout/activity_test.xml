@@ -7,8 +7,8 @@
     tools:context="com.example.tene.zetsushin.test">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -236,12 +236,32 @@
                 android:layout_height="2dp"
                 android:background="@android:color/darker_gray" />
 
-            <TextView
-                android:id="@+id/textView2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="問いは以上です。\nすべての問いについて、選んだ選択肢を確認してください。\n選択肢を選んでいない場合は不正解とします。\n下記の「次へ」を押すと、解答の採点に移り、このページに戻ることはできません。\nもう一度、確認してください。\nよろしければ「次へ」を押してください。"
-                android:textSize="24sp" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="問いは以上です。\nすべての問いについて、選んだ選択肢を確認してください。\n選択肢を選んでいない場合は不正解とします。\n下記の「次へ」を押すと、解答の採点に移り、このページに戻ることはできません。\nもう一度、確認してください。\nよろしければ「次へ」を押してください。"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/next_result"
@@ -253,5 +273,7 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
+
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
