@@ -34,13 +34,13 @@
 
                 <TextView
                     android:id="@+id/textView17"
-                    android:layout_width="29dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/test_text"
-                    android:layout_width="384dp"
+                    android:layout_width="491dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="問いに示された舌画像を見て、５つの選択肢の中から正しいと思われる選択肢を １つ選んでください。"
@@ -48,7 +48,7 @@
 
                 <TextView
                     android:id="@+id/textView18"
-                    android:layout_width="21dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -73,34 +73,33 @@
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
-                <LinearLayout
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/q1_image"
-                        android:layout_width="296dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
                         android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/q1_image" />
-
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
 
                     <RadioGroup
                         android:id="@+id/q1_rg"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q1_image">
 
                         <RadioButton
                             android:id="@+id/radioButton"
@@ -137,7 +136,7 @@
                             android:text="5.淡白"
                             android:textSize="24sp" />
                     </RadioGroup>
-                </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
 
             </LinearLayout>
 
@@ -148,47 +147,46 @@
                 android:orientation="vertical">
 
                 <View
-                    android:id="@+id/view4"
+                    android:id="@+id/view3_2"
                     android:layout_width="fill_parent"
                     android:layout_height="2dp"
                     android:background="@android:color/darker_gray" />
 
                 <TextView
-                    android:id="@+id/q2_text"
+                    android:id="@+id/q1_text_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="問2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
-                <LinearLayout
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView19_2"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/q2_image"
-                        android:layout_width="296dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/q2_image" />
-
-                    <TextView
-                        android:id="@+id/textView20_2"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q1_image" />
 
                     <RadioGroup
                         android:id="@+id/q2_rg"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q2_image">
 
                         <RadioButton
                             android:id="@+id/radioButton_2"
@@ -225,55 +223,52 @@
                             android:text="5.淡白"
                             android:textSize="24sp" />
                     </RadioGroup>
-                </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
 
             </LinearLayout>
 
+        <View
+            android:id="@+id/view0"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
 
-            <View
-                android:id="@+id/view"
-                android:layout_width="fill_parent"
-                android:layout_height="2dp"
-                android:background="@android:color/darker_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="24dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="問いは以上です。\nすべての問いについて、選んだ選択肢を確認してください。\n選択肢を選んでいない場合は不正解とします。\n下記の「次へ」を押すと、解答の採点に移り、このページに戻ることはできません。\nもう一度、確認してください。\nよろしければ「次へ」を押してください。"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="23dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/next_result"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="24dp"
                 android:layout_height="wrap_content"
-                android:onClick="onNextResultTapped"
-                android:text="次へ"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="問いは以上です。\nすべての問いについて、選んだ選択肢を確認してください。\n選択肢を選んでいない場合は不正解とします。\n下記の「次へ」を押すと、解答の採点に移り、このページに戻ることはできません。\nもう一度、確認してください。\nよろしければ「次へ」を押してください。"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/next_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNextResultTapped"
+            android:text="次へ"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
+    </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
