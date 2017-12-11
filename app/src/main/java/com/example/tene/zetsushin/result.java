@@ -166,25 +166,25 @@ public class result extends AppCompatActivity {
         int q20_rb5_id = intent.getIntExtra("q20_rb5_setId",0);
 
         if(q1_a==q1_1_rb_id)    sum=sum+5;
-        if(q2_a==q2_rb4_id)     sum=sum+5;
-        if(q3_a==q3_rb2_id)     sum=sum+5;
+        if(q2_a==q2_rb1_id)     sum=sum+5;
+        if(q3_a==q3_rb4_id)     sum=sum+5;
         if(q4_a==q4_rb2_id)     sum=sum+5;
         if(q5_a==q5_rb4_id)     sum=sum+5;
-        if(q6_a==q6_rb3_id)     sum=sum+5;
-        if(q7_a==q7_rb2_id)     sum=sum+5;
+        if(q6_a==q6_rb5_id)     sum=sum+5;
+        if(q7_a==q7_rb5_id)     sum=sum+5;
         if(q8_a==q8_rb4_id)     sum=sum+5;
-        if(q9_a==q9_rb4_id)     sum=sum+5;
+        if(q9_a==q9_rb5_id)     sum=sum+5;
         if(q10_a==q10_rb1_id)     sum=sum+5;
-        if(q11_a==q11_rb2_id)     sum=sum+5;
-        if(q12_a==q12_rb2_id)     sum=sum+5;
-        if(q13_a==q13_rb4_id)     sum=sum+5;
-        if(q14_a==q14_rb5_id)     sum=sum+5;
-        if(q15_a==q15_rb2_id)     sum=sum+5;
-        if(q16_a==q16_rb4_id)     sum=sum+5;
-        if(q17_a==q17_rb2_id)     sum=sum+5;
-        if(q18_a==q18_rb2_id)     sum=sum+5;
-        if(q19_a==q19_rb1_id)     sum=sum+5;
-        if(q20_a==q20_rb4_id)     sum=sum+5;
+        if(q11_a==q11_rb4_id)     sum=sum+5;
+        if(q12_a==q12_rb3_id)     sum=sum+5;
+        if(q13_a==q13_rb1_id)     sum=sum+5;
+        if(q14_a==q14_rb2_id)     sum=sum+5;
+        if(q15_a==q15_rb4_id)     sum=sum+5;
+        if(q16_a==q16_rb3_id)     sum=sum+5;
+        if(q17_a==q17_rb5_id)     sum=sum+5;
+        if(q18_a==q18_rb3_id)     sum=sum+5;
+        if(q19_a==q19_rb2_id)     sum=sum+5;
+        if(q20_a==q20_rb3_id)     sum=sum+5;
 
 
 

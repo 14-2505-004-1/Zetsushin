@@ -192,35 +192,35 @@
                             android:id="@+id/radioButton_2"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_2"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_2"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_2"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_2"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.紅舌"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -279,35 +279,35 @@
                             android:id="@+id/radioButton_3"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_3"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_3"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_3"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_3"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.舌尖紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -380,14 +380,14 @@
                             android:id="@+id/radioButton3_4"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_4"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -453,21 +453,21 @@
                             android:id="@+id/radioButton_5"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_5"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_5"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -540,35 +540,35 @@
                             android:id="@+id/radioButton_6"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_6"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_6"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_6"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_6"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.舌尖紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -627,35 +627,35 @@
                             android:id="@+id/radioButton_7"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_7"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_7"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_7"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_7"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.紫斑舌"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -801,7 +801,7 @@
                             android:id="@+id/radioButton_9"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -815,21 +815,21 @@
                             android:id="@+id/radioButton3_9"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_9"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_9"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.淡紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -895,7 +895,7 @@
                             android:id="@+id/radioButton2_10"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -909,7 +909,7 @@
                             android:id="@+id/radioButton4_10"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -976,14 +976,14 @@
                             android:id="@+id/radioButton_11"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_11"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -997,14 +997,14 @@
                             android:id="@+id/radioButton4_11"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_11"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.淡紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1063,35 +1063,35 @@
                             android:id="@+id/radioButton_12"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_12"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_12"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_12"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_12"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.淡紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1150,7 +1150,7 @@
                             android:id="@+id/radioButton_13"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -1164,21 +1164,21 @@
                             android:id="@+id/radioButton3_13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.舌尖紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1244,28 +1244,28 @@
                             android:id="@+id/radioButton2_14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.淡紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1324,35 +1324,35 @@
                             android:id="@+id/radioButton_15"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_15"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_15"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_15"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_15"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.淡紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1411,7 +1411,7 @@
                             android:id="@+id/radioButton_16"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -1425,21 +1425,21 @@
                             android:id="@+id/radioButton3_16"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_16"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_16"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.紅舌"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1498,14 +1498,14 @@
                             android:id="@+id/radioButton_17"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_17"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -1519,14 +1519,14 @@
                             android:id="@+id/radioButton4_17"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_17"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.紫斑舌"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1585,28 +1585,28 @@
                             android:id="@+id/radioButton_18"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -1672,21 +1672,21 @@
                             android:id="@+id/radioButton_19"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.紫斑舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_19"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_19"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
@@ -1700,7 +1700,7 @@
                             android:id="@+id/radioButton5_19"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.舌尖紅"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
@@ -1759,35 +1759,35 @@
                             android:id="@+id/radioButton_20"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
-                            android:text="1.紅舌"
+                            android:text="1.淡白"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton2_20"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton3_20"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:text="3.淡紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton4_20"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.淡紅"
+                            android:text="4.舌尖紅"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_20"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.紫斑舌"
                             android:textSize="24sp" />
                     </RadioGroup>
                 </android.support.constraint.ConstraintLayout>
