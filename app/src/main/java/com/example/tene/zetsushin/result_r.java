@@ -7,7 +7,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class result extends AppCompatActivity {
+public class result_r extends AppCompatActivity {
 
 
 
@@ -15,175 +15,175 @@ public class result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         int sum = 0;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result_r);
 
         Intent intent = getIntent();
 
 
 
-        int q1_a = intent.getIntExtra("q1_answer",0);
+        int q1_a = intent.getIntExtra("q1_answer_r",0);
 
-        int q1_1_rb_id = intent.getIntExtra("q1_1_setId",0);
-        int q1_2_rb_id = intent.getIntExtra("q1_2_setId",0);
-        int q1_3_rb_id = intent.getIntExtra("q1_3_setId",0);
-        int q1_4_rb_id = intent.getIntExtra("q1_4_setId",0);
-        int q1_5_rb_id = intent.getIntExtra("q1_5_setId",0);
+        int q1_1_rb_id = intent.getIntExtra("q1_1_setId_r",0);
+        int q1_2_rb_id = intent.getIntExtra("q1_2_setId_r",0);
+        int q1_3_rb_id = intent.getIntExtra("q1_3_setId_r",0);
+        int q1_4_rb_id = intent.getIntExtra("q1_4_setId_r",0);
+        int q1_5_rb_id = intent.getIntExtra("q1_5_setId_r",0);
 
-        int q2_a = intent.getIntExtra("q2_answer",0);
-        int q2_rb1_id = intent.getIntExtra("q2_rb1_setId",0);
-        int q2_rb2_id = intent.getIntExtra("q2_rb2_setId",0);
-        int q2_rb3_id = intent.getIntExtra("q2_rb3_setId",0);
-        int q2_rb4_id = intent.getIntExtra("q2_rb4_setId",0);
-        int q2_rb5_id = intent.getIntExtra("q2_rb5_setId",0);
+        int q2_a = intent.getIntExtra("q2_answer_r",0);
+        int q2_rb1_id = intent.getIntExtra("q2_rb1_setId_r",0);
+        int q2_rb2_id = intent.getIntExtra("q2_rb2_setId_r",0);
+        int q2_rb3_id = intent.getIntExtra("q2_rb3_setId_r",0);
+        int q2_rb4_id = intent.getIntExtra("q2_rb4_setId_r",0);
+        int q2_rb5_id = intent.getIntExtra("q2_rb5_setId_r",0);
 
-        int q3_a = intent.getIntExtra("q3_answer",0);
-        int q3_rb1_id = intent.getIntExtra("q3_rb1_setId",0);
-        int q3_rb2_id = intent.getIntExtra("q3_rb2_setId",0);
-        int q3_rb3_id = intent.getIntExtra("q3_rb3_setId",0);
-        int q3_rb4_id = intent.getIntExtra("q3_rb4_setId",0);
-        int q3_rb5_id = intent.getIntExtra("q3_rb5_setId",0);
+        int q3_a = intent.getIntExtra("q3_answer_r",0);
+        int q3_rb1_id = intent.getIntExtra("q3_rb1_setId_r",0);
+        int q3_rb2_id = intent.getIntExtra("q3_rb2_setId_r",0);
+        int q3_rb3_id = intent.getIntExtra("q3_rb3_setId_r",0);
+        int q3_rb4_id = intent.getIntExtra("q3_rb4_setId_r",0);
+        int q3_rb5_id = intent.getIntExtra("q3_rb5_setId_r",0);
 
-        int q4_a = intent.getIntExtra("q4_answer",0);
-        int q4_rb1_id = intent.getIntExtra("q4_rb1_setId",0);
-        int q4_rb2_id = intent.getIntExtra("q4_rb2_setId",0);
-        int q4_rb3_id = intent.getIntExtra("q4_rb3_setId",0);
-        int q4_rb4_id = intent.getIntExtra("q4_rb4_setId",0);
-        int q4_rb5_id = intent.getIntExtra("q4_rb5_setId",0);
+        int q4_a = intent.getIntExtra("q4_answer_r",0);
+        int q4_rb1_id = intent.getIntExtra("q4_rb1_setId_r",0);
+        int q4_rb2_id = intent.getIntExtra("q4_rb2_setId_r",0);
+        int q4_rb3_id = intent.getIntExtra("q4_rb3_setId_r",0);
+        int q4_rb4_id = intent.getIntExtra("q4_rb4_setId_r",0);
+        int q4_rb5_id = intent.getIntExtra("q4_rb5_setId_r",0);
 
-        int q5_a = intent.getIntExtra("q5_answer",0);
-        int q5_rb1_id = intent.getIntExtra("q5_rb1_setId",0);
-        int q5_rb2_id = intent.getIntExtra("q5_rb2_setId",0);
-        int q5_rb3_id = intent.getIntExtra("q5_rb3_setId",0);
-        int q5_rb4_id = intent.getIntExtra("q5_rb4_setId",0);
-        int q5_rb5_id = intent.getIntExtra("q5_rb5_setId",0);
+        int q5_a = intent.getIntExtra("q5_answer_r",0);
+        int q5_rb1_id = intent.getIntExtra("q5_rb1_setId_r",0);
+        int q5_rb2_id = intent.getIntExtra("q5_rb2_setId_r",0);
+        int q5_rb3_id = intent.getIntExtra("q5_rb3_setId_r",0);
+        int q5_rb4_id = intent.getIntExtra("q5_rb4_setId_r",0);
+        int q5_rb5_id = intent.getIntExtra("q5_rb5_setId_r",0);
 
-        int q6_a = intent.getIntExtra("q6_answer",0);
-        int q6_rb1_id = intent.getIntExtra("q6_rb1_setId",0);
-        int q6_rb2_id = intent.getIntExtra("q6_rb2_setId",0);
-        int q6_rb3_id = intent.getIntExtra("q6_rb3_setId",0);
-        int q6_rb4_id = intent.getIntExtra("q6_rb4_setId",0);
-        int q6_rb5_id = intent.getIntExtra("q6_rb5_setId",0);
+        int q6_a = intent.getIntExtra("q6_answer_r",0);
+        int q6_rb1_id = intent.getIntExtra("q6_rb1_setId_r",0);
+        int q6_rb2_id = intent.getIntExtra("q6_rb2_setId_r",0);
+        int q6_rb3_id = intent.getIntExtra("q6_rb3_setId_r",0);
+        int q6_rb4_id = intent.getIntExtra("q6_rb4_setId_r",0);
+        int q6_rb5_id = intent.getIntExtra("q6_rb5_setId_r",0);
 
-        int q7_a = intent.getIntExtra("q7_answer",0);
-        int q7_rb1_id = intent.getIntExtra("q7_rb1_setId",0);
-        int q7_rb2_id = intent.getIntExtra("q7_rb2_setId",0);
-        int q7_rb3_id = intent.getIntExtra("q7_rb3_setId",0);
-        int q7_rb4_id = intent.getIntExtra("q7_rb4_setId",0);
-        int q7_rb5_id = intent.getIntExtra("q7_rb5_setId",0);
+        int q7_a = intent.getIntExtra("q7_answer_r",0);
+        int q7_rb1_id = intent.getIntExtra("q7_rb1_setId_r",0);
+        int q7_rb2_id = intent.getIntExtra("q7_rb2_setId_r",0);
+        int q7_rb3_id = intent.getIntExtra("q7_rb3_setId_r",0);
+        int q7_rb4_id = intent.getIntExtra("q7_rb4_setId_r",0);
+        int q7_rb5_id = intent.getIntExtra("q7_rb5_setId_r",0);
 
-        int q8_a = intent.getIntExtra("q8_answer",0);
-        int q8_rb1_id = intent.getIntExtra("q8_rb1_setId",0);
-        int q8_rb2_id = intent.getIntExtra("q8_rb2_setId",0);
-        int q8_rb3_id = intent.getIntExtra("q8_rb3_setId",0);
-        int q8_rb4_id = intent.getIntExtra("q8_rb4_setId",0);
-        int q8_rb5_id = intent.getIntExtra("q8_rb5_setId",0);
+        int q8_a = intent.getIntExtra("q8_answer_r",0);
+        int q8_rb1_id = intent.getIntExtra("q8_rb1_setId_r",0);
+        int q8_rb2_id = intent.getIntExtra("q8_rb2_setId_r",0);
+        int q8_rb3_id = intent.getIntExtra("q8_rb3_setId_r",0);
+        int q8_rb4_id = intent.getIntExtra("q8_rb4_setId_r",0);
+        int q8_rb5_id = intent.getIntExtra("q8_rb5_setId_r",0);
 
-        int q9_a = intent.getIntExtra("q9_answer",0);
-        int q9_rb1_id = intent.getIntExtra("q9_rb1_setId",0);
-        int q9_rb2_id = intent.getIntExtra("q9_rb2_setId",0);
-        int q9_rb3_id = intent.getIntExtra("q9_rb3_setId",0);
-        int q9_rb4_id = intent.getIntExtra("q9_rb4_setId",0);
-        int q9_rb5_id = intent.getIntExtra("q9_rb5_setId",0);
+        int q9_a = intent.getIntExtra("q9_answer_r",0);
+        int q9_rb1_id = intent.getIntExtra("q9_rb1_setId_r",0);
+        int q9_rb2_id = intent.getIntExtra("q9_rb2_setId_r",0);
+        int q9_rb3_id = intent.getIntExtra("q9_rb3_setId_r",0);
+        int q9_rb4_id = intent.getIntExtra("q9_rb4_setId_r",0);
+        int q9_rb5_id = intent.getIntExtra("q9_rb5_setId_r",0);
 
-        int q10_a = intent.getIntExtra("q10_answer",0);
-        int q10_rb1_id = intent.getIntExtra("q10_rb1_setId",0);
-        int q10_rb2_id = intent.getIntExtra("q10_rb2_setId",0);
-        int q10_rb3_id = intent.getIntExtra("q10_rb3_setId",0);
-        int q10_rb4_id = intent.getIntExtra("q10_rb4_setId",0);
-        int q10_rb5_id = intent.getIntExtra("q10_rb5_setId",0);
+        int q10_a = intent.getIntExtra("q10_answer_r",0);
+        int q10_rb1_id = intent.getIntExtra("q10_rb1_setId_r",0);
+        int q10_rb2_id = intent.getIntExtra("q10_rb2_setId_r",0);
+        int q10_rb3_id = intent.getIntExtra("q10_rb3_setId_r",0);
+        int q10_rb4_id = intent.getIntExtra("q10_rb4_setId_r",0);
+        int q10_rb5_id = intent.getIntExtra("q10_rb5_setId_r",0);
 
-        int q11_a = intent.getIntExtra("q11_answer",0);
-        int q11_rb1_id = intent.getIntExtra("q11_rb1_setId",0);
-        int q11_rb2_id = intent.getIntExtra("q11_rb2_setId",0);
-        int q11_rb3_id = intent.getIntExtra("q11_rb3_setId",0);
-        int q11_rb4_id = intent.getIntExtra("q11_rb4_setId",0);
-        int q11_rb5_id = intent.getIntExtra("q11_rb5_setId",0);
-
-
-        int q12_a = intent.getIntExtra("q12_answer",0);
-        int q12_rb1_id = intent.getIntExtra("q12_rb1_setId",0);
-        int q12_rb2_id = intent.getIntExtra("q12_rb2_setId",0);
-        int q12_rb3_id = intent.getIntExtra("q12_rb3_setId",0);
-        int q12_rb4_id = intent.getIntExtra("q12_rb4_setId",0);
-        int q12_rb5_id = intent.getIntExtra("q12_rb5_setId",0);
-
-        int q13_a = intent.getIntExtra("q13_answer",0);
-        int q13_rb1_id = intent.getIntExtra("q13_rb1_setId",0);
-        int q13_rb2_id = intent.getIntExtra("q13_rb2_setId",0);
-        int q13_rb3_id = intent.getIntExtra("q13_rb3_setId",0);
-        int q13_rb4_id = intent.getIntExtra("q13_rb4_setId",0);
-        int q13_rb5_id = intent.getIntExtra("q13_rb5_setId",0);
-
-        int q14_a = intent.getIntExtra("q14_answer",0);
-        int q14_rb1_id = intent.getIntExtra("q14_rb1_setId",0);
-        int q14_rb2_id = intent.getIntExtra("q14_rb2_setId",0);
-        int q14_rb3_id = intent.getIntExtra("q14_rb3_setId",0);
-        int q14_rb4_id = intent.getIntExtra("q14_rb4_setId",0);
-        int q14_rb5_id = intent.getIntExtra("q14_rb5_setId",0);
+        int q11_a = intent.getIntExtra("q11_answer_r",0);
+        int q11_rb1_id = intent.getIntExtra("q11_rb1_setId_r",0);
+        int q11_rb2_id = intent.getIntExtra("q11_rb2_setId_r",0);
+        int q11_rb3_id = intent.getIntExtra("q11_rb3_setId_r",0);
+        int q11_rb4_id = intent.getIntExtra("q11_rb4_setId_r",0);
+        int q11_rb5_id = intent.getIntExtra("q11_rb5_setId_r",0);
 
 
-        int q15_a = intent.getIntExtra("q15_answer",0);
-        int q15_rb1_id = intent.getIntExtra("q15_rb1_setId",0);
-        int q15_rb2_id = intent.getIntExtra("q15_rb2_setId",0);
-        int q15_rb3_id = intent.getIntExtra("q15_rb3_setId",0);
-        int q15_rb4_id = intent.getIntExtra("q15_rb4_setId",0);
-        int q15_rb5_id = intent.getIntExtra("q15_rb5_setId",0);
+        int q12_a = intent.getIntExtra("q12_answer_r",0);
+        int q12_rb1_id = intent.getIntExtra("q12_rb1_setId_r",0);
+        int q12_rb2_id = intent.getIntExtra("q12_rb2_setId_r",0);
+        int q12_rb3_id = intent.getIntExtra("q12_rb3_setId_r",0);
+        int q12_rb4_id = intent.getIntExtra("q12_rb4_setId_r",0);
+        int q12_rb5_id = intent.getIntExtra("q12_rb5_setId_r",0);
 
-        int q16_a = intent.getIntExtra("q16_answer",0);
-        int q16_rb1_id = intent.getIntExtra("q16_rb1_setId",0);
-        int q16_rb2_id = intent.getIntExtra("q16_rb2_setId",0);
-        int q16_rb3_id = intent.getIntExtra("q16_rb3_setId",0);
-        int q16_rb4_id = intent.getIntExtra("q16_rb4_setId",0);
-        int q16_rb5_id = intent.getIntExtra("q16_rb5_setId",0);
+        int q13_a = intent.getIntExtra("q13_answer_r",0);
+        int q13_rb1_id = intent.getIntExtra("q13_rb1_setId_r",0);
+        int q13_rb2_id = intent.getIntExtra("q13_rb2_setId_r",0);
+        int q13_rb3_id = intent.getIntExtra("q13_rb3_setId_r",0);
+        int q13_rb4_id = intent.getIntExtra("q13_rb4_setId_r",0);
+        int q13_rb5_id = intent.getIntExtra("q13_rb5_setId_r",0);
 
-        int q17_a = intent.getIntExtra("q17_answer",0);
-        int q17_rb1_id = intent.getIntExtra("q17_rb1_setId",0);
-        int q17_rb2_id = intent.getIntExtra("q17_rb2_setId",0);
-        int q17_rb3_id = intent.getIntExtra("q17_rb3_setId",0);
-        int q17_rb4_id = intent.getIntExtra("q17_rb4_setId",0);
-        int q17_rb5_id = intent.getIntExtra("q17_rb5_setId",0);
-
-        int q18_a = intent.getIntExtra("q18_answer",0);
-        int q18_rb1_id = intent.getIntExtra("q18_rb1_setId",0);
-        int q18_rb2_id = intent.getIntExtra("q18_rb2_setId",0);
-        int q18_rb3_id = intent.getIntExtra("q18_rb3_setId",0);
-        int q18_rb4_id = intent.getIntExtra("q18_rb4_setId",0);
-        int q18_rb5_id = intent.getIntExtra("q18_rb5_setId",0);
-
-        int q19_a = intent.getIntExtra("q19_answer",0);
-        int q19_rb1_id = intent.getIntExtra("q19_rb1_setId",0);
-        int q19_rb2_id = intent.getIntExtra("q19_rb2_setId",0);
-        int q19_rb3_id = intent.getIntExtra("q19_rb3_setId",0);
-        int q19_rb4_id = intent.getIntExtra("q19_rb4_setId",0);
-        int q19_rb5_id = intent.getIntExtra("q19_rb5_setId",0);
+        int q14_a = intent.getIntExtra("q14_answer_r",0);
+        int q14_rb1_id = intent.getIntExtra("q14_rb1_setId_r",0);
+        int q14_rb2_id = intent.getIntExtra("q14_rb2_setId_r",0);
+        int q14_rb3_id = intent.getIntExtra("q14_rb3_setId_r",0);
+        int q14_rb4_id = intent.getIntExtra("q14_rb4_setId_r",0);
+        int q14_rb5_id = intent.getIntExtra("q14_rb5_setId_r",0);
 
 
-        int q20_a = intent.getIntExtra("q20_answer",0);
-        int q20_rb1_id = intent.getIntExtra("q20_rb1_setId",0);
-        int q20_rb2_id = intent.getIntExtra("q20_rb2_setId",0);
-        int q20_rb3_id = intent.getIntExtra("q20_rb3_setId",0);
-        int q20_rb4_id = intent.getIntExtra("q20_rb4_setId",0);
-        int q20_rb5_id = intent.getIntExtra("q20_rb5_setId",0);
+        int q15_a = intent.getIntExtra("q15_answer_r",0);
+        int q15_rb1_id = intent.getIntExtra("q15_rb1_setId_r",0);
+        int q15_rb2_id = intent.getIntExtra("q15_rb2_setId_r",0);
+        int q15_rb3_id = intent.getIntExtra("q15_rb3_setId_r",0);
+        int q15_rb4_id = intent.getIntExtra("q15_rb4_setId_r",0);
+        int q15_rb5_id = intent.getIntExtra("q15_rb5_setId_r",0);
+
+        int q16_a = intent.getIntExtra("q16_answer_r",0);
+        int q16_rb1_id = intent.getIntExtra("q16_rb1_setId_r",0);
+        int q16_rb2_id = intent.getIntExtra("q16_rb2_setId_r",0);
+        int q16_rb3_id = intent.getIntExtra("q16_rb3_setId_r",0);
+        int q16_rb4_id = intent.getIntExtra("q16_rb4_setId_r",0);
+        int q16_rb5_id = intent.getIntExtra("q16_rb5_setId_r",0);
+
+        int q17_a = intent.getIntExtra("q17_answer_r",0);
+        int q17_rb1_id = intent.getIntExtra("q17_rb1_setId_r",0);
+        int q17_rb2_id = intent.getIntExtra("q17_rb2_setId_r",0);
+        int q17_rb3_id = intent.getIntExtra("q17_rb3_setId_r",0);
+        int q17_rb4_id = intent.getIntExtra("q17_rb4_setId_r",0);
+        int q17_rb5_id = intent.getIntExtra("q17_rb5_setId_r",0);
+
+        int q18_a = intent.getIntExtra("q18_answer_r",0);
+        int q18_rb1_id = intent.getIntExtra("q18_rb1_setId_r",0);
+        int q18_rb2_id = intent.getIntExtra("q18_rb2_setId_r",0);
+        int q18_rb3_id = intent.getIntExtra("q18_rb3_setId_r",0);
+        int q18_rb4_id = intent.getIntExtra("q18_rb4_setId_r",0);
+        int q18_rb5_id = intent.getIntExtra("q18_rb5_setId_r",0);
+
+        int q19_a = intent.getIntExtra("q19_answer_r",0);
+        int q19_rb1_id = intent.getIntExtra("q19_rb1_setId_r",0);
+        int q19_rb2_id = intent.getIntExtra("q19_rb2_setId_r",0);
+        int q19_rb3_id = intent.getIntExtra("q19_rb3_setId_r",0);
+        int q19_rb4_id = intent.getIntExtra("q19_rb4_setId_r",0);
+        int q19_rb5_id = intent.getIntExtra("q19_rb5_setId_r",0);
+
+
+        int q20_a = intent.getIntExtra("q20_answer_r",0);
+        int q20_rb1_id = intent.getIntExtra("q20_rb1_setId_r",0);
+        int q20_rb2_id = intent.getIntExtra("q20_rb2_setId_r",0);
+        int q20_rb3_id = intent.getIntExtra("q20_rb3_setId_r",0);
+        int q20_rb4_id = intent.getIntExtra("q20_rb4_setId_r",0);
+        int q20_rb5_id = intent.getIntExtra("q20_rb5_setId_r",0);
 
         if(q1_a==q1_1_rb_id)    sum=sum+5;
-        if(q2_a==q2_rb1_id)     sum=sum+5;
-        if(q3_a==q3_rb4_id)     sum=sum+5;
+        if(q2_a==q2_rb3_id)     sum=sum+5;
+        if(q3_a==q3_rb2_id)     sum=sum+5;
         if(q4_a==q4_rb2_id)     sum=sum+5;
-        if(q5_a==q5_rb4_id)     sum=sum+5;
-        if(q6_a==q6_rb5_id)     sum=sum+5;
-        if(q7_a==q7_rb5_id)     sum=sum+5;
-        if(q8_a==q8_rb4_id)     sum=sum+5;
-        if(q9_a==q9_rb5_id)     sum=sum+5;
-        if(q10_a==q10_rb1_id)     sum=sum+5;
-        if(q11_a==q11_rb4_id)     sum=sum+5;
+        if(q5_a==q5_rb3_id)     sum=sum+5;
+        if(q6_a==q6_rb2_id)     sum=sum+5;
+        if(q7_a==q7_rb2_id)     sum=sum+5;
+        if(q8_a==q8_rb2_id)     sum=sum+5;
+        if(q9_a==q9_rb2_id)     sum=sum+5;
+        if(q10_a==q10_rb4_id)     sum=sum+5;
+        if(q11_a==q11_rb5_id)     sum=sum+5;
         if(q12_a==q12_rb3_id)     sum=sum+5;
-        if(q13_a==q13_rb1_id)     sum=sum+5;
-        if(q14_a==q14_rb2_id)     sum=sum+5;
-        if(q15_a==q15_rb4_id)     sum=sum+5;
+        if(q13_a==q13_rb2_id)     sum=sum+5;
+        if(q14_a==q14_rb3_id)     sum=sum+5;
+        if(q15_a==q15_rb5_id)     sum=sum+5;
         if(q16_a==q16_rb3_id)     sum=sum+5;
-        if(q17_a==q17_rb5_id)     sum=sum+5;
-        if(q18_a==q18_rb3_id)     sum=sum+5;
-        if(q19_a==q19_rb2_id)     sum=sum+5;
+        if(q17_a==q17_rb1_id)     sum=sum+5;
+        if(q18_a==q18_rb2_id)     sum=sum+5;
+        if(q19_a==q19_rb4_id)     sum=sum+5;
         if(q20_a==q20_rb3_id)     sum=sum+5;
 
 
@@ -191,10 +191,10 @@ public class result extends AppCompatActivity {
         TextView ScoreView = (TextView) findViewById(R.id.score_r);
         ScoreView.setText(String.valueOf(sum));
 
-        RadioGroup rg_q1_r=(RadioGroup) findViewById(R.id.q1_rg_r);
+        RadioGroup rg_q1=(RadioGroup) findViewById(R.id.q1_rg_r);
 
 
-        rg_q1_r.check(q1_a);
+        rg_q1.check(q1_a);
 
         RadioButton rb_1 = (RadioButton)findViewById(R.id.radioButton);
         RadioButton rb_2 = (RadioButton)findViewById(R.id.radioButton2);
@@ -202,6 +202,7 @@ public class result extends AppCompatActivity {
         RadioButton rb_4 = (RadioButton)findViewById(R.id.radioButton4);
         RadioButton rb_5 = (RadioButton)findViewById(R.id.radioButton5);
         if(q1_a==q1_1_rb_id) {
+            rb_1.isChecked();
             rb_2.setEnabled(false);
             rb_3.setEnabled(false);
             rb_4.setEnabled(false);

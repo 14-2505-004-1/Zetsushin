@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
      */
     public void onStartButtonTapped(View view) {
-        Intent intent = new Intent(this, test.class);
+        Intent intent = new Intent(this, test_r.class);
         startActivity(intent);
     }
 

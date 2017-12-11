@@ -23,14 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:label="Top画面"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="Top画面" />
         <activity
             android:name=".test"
             android:label="テスト問題1" />
         <activity
             android:name=".result"
-            android:label="採点結果"></activity>
+            android:label="採点結果" />
+        <activity android:name=".confusion" />
+        <activity android:name=".test_r" />
+        <activity android:name=".result_r"></activity>
     </application>
 
 </manifest>
