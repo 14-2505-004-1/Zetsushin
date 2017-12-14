@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * A login screen that offers login via email/password.
@@ -30,13 +31,24 @@ public class LoginActivity extends AppCompatActivity  {
      */
     public void onNextButtonTapped(View view) {
 
-        EditText edit = (EditText)findViewById(R.id.id);
+        EditText edit = (EditText) findViewById(R.id.id);
         String text = edit.getText().toString();
-        SpannableStringBuilder sp = (SpannableStringBuilder)edit.getText();
+        SpannableStringBuilder sp = (SpannableStringBuilder) edit.getText();
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("InputID", text);
 
-        startActivity(intent);
+        EditText pass = (EditText) findViewById(R.id.password);
+        String passwords = pass.getText().toString();
+
+        //startActivity(intent);
+        /**/
+        if(text.equals("")){
+            Toast.makeText(this, "ID が未入力です", Toast.LENGTH_LONG).show();
+        } else {
+            if (passwords.equals("1218")) startActivity(intent);
+            else Toast.makeText(this, "ID または Passwordが違います", Toast.LENGTH_LONG).show();
+        }
+    /**/
     }
     /*
 

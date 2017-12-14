@@ -37,7 +37,7 @@
             android:label="採点結果" />
         <activity
             android:name=".confusion_ver2"
-            android:label="混合行列"
+            android:label="テスト問題1の混合行列"
             android:screenOrientation="landscape">
 
         </activity>
