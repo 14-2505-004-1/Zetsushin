@@ -307,7 +307,7 @@ public class test extends AppCompatActivity {
 
 
 
-        Intent intent = new Intent(this, result.class);
+        Intent intent = new Intent(this, test_r.class);
 
         intent.putExtra("q1_answer",q1_checkedId);
         intent.putExtra("q1_1_setId",q1_1_rb_id);

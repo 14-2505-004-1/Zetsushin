@@ -191,10 +191,10 @@ public class result_r extends AppCompatActivity {
         TextView ScoreView = (TextView) findViewById(R.id.score_r);
         ScoreView.setText(String.valueOf(sum));
 
-        RadioGroup rg_q1=(RadioGroup) findViewById(R.id.q1_rg_r);
+        RadioGroup rg_q1r=(RadioGroup) findViewById(R.id.q1_rg_r1);
 
 
-        rg_q1.check(q1_a);
+
 
         RadioButton rb_1 = (RadioButton)findViewById(R.id.radioButton);
         RadioButton rb_2 = (RadioButton)findViewById(R.id.radioButton2);
@@ -202,7 +202,7 @@ public class result_r extends AppCompatActivity {
         RadioButton rb_4 = (RadioButton)findViewById(R.id.radioButton4);
         RadioButton rb_5 = (RadioButton)findViewById(R.id.radioButton5);
         if(q1_a==q1_1_rb_id) {
-            rb_1.isChecked();
+            rg_q1r.check(R.id.radioButton);
             rb_2.setEnabled(false);
             rb_3.setEnabled(false);
             rb_4.setEnabled(false);

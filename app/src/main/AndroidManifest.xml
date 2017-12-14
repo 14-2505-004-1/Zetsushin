@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="舌神">
+            android:label="ログイン画面">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,11 +30,17 @@
             android:name=".test"
             android:label="テスト問題1" />
         <activity
+            android:name=".test_r"
+            android:label="テスト問題1(リバース)" />
+        <activity
             android:name=".result"
             android:label="採点結果" />
-        <activity android:name=".confusion" />
-        <activity android:name=".test_r" />
-        <activity android:name=".result_r"></activity>
+        <activity
+            android:name=".confusion_ver2"
+            android:label="混合行列"
+            android:screenOrientation="landscape">
+
+        </activity>
     </application>
 
 </manifest>

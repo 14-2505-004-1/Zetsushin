@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tene.zetsushin.confusion_ver2"
+    tools:layout_editor_absoluteY="89dp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="345dp"
+                    android:text="解答"
+                    android:textSize="36sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="　"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <Button
+                    android:id="@+id/beni_k"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginTop="8dp"
+                    android:text="紅舌"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <Button
+                    android:id="@+id/mura_k"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginTop="8dp"
+                    android:text="紫斑舌"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/beni_k"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <Button
+                    android:id="@+id/sita_k"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginTop="8dp"
+                    android:text="舌尖紅"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/mura_k"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <Button
+                    android:id="@+id/awabeni_k"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginTop="8dp"
+                    android:text="淡紅"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/sita_k"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <Button
+                    android:id="@+id/awasiro_k"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginTop="8dp"
+                    android:text="淡白"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/awabeni_k"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <TextView
+                    android:id="@+id/seitouritsu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="クラス別の\n正答率"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/awasiro_k"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <Button
+                    android:id="@+id/beni_s"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:text="紅舌"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="正\n解"
+                    android:textSize="36sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/mura_s"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:text="紫斑舌"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/beni_s" />
+
+                <Button
+                    android:id="@+id/sita_s"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:text="舌尖紅"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/mura_s" />
+
+                <Button
+                    android:id="@+id/awabeni_s"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:text="淡紅"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/sita_s" />
+
+                <Button
+                    android:id="@+id/awasiro_s"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:text="淡白"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/awabeni_s" />
+
+                <TextView
+                    android:id="@+id/vA_1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@color/seikai"
+                    android:gravity="center"
+                    android:text="A-1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/beni_s"
+                    app:layout_constraintTop_toBottomOf="@+id/beni_k" />
+
+                <TextView
+                    android:id="@+id/vA_2"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="A-2"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vA_1"
+                    app:layout_constraintTop_toBottomOf="@+id/mura_k" />
+
+                <TextView
+                    android:id="@+id/vA_3"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="A-3"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vA_2"
+                    app:layout_constraintTop_toBottomOf="@+id/sita_k" />
+
+                <TextView
+                    android:id="@+id/vA_4"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="A-4"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vA_3"
+                    app:layout_constraintTop_toBottomOf="@+id/awabeni_k" />
+
+                <TextView
+                    android:id="@+id/vA_5"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="A-5"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vA_4"
+                    app:layout_constraintTop_toBottomOf="@+id/awasiro_k" />
+
+                <TextView
+                    android:id="@+id/vB_1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="B-1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/mura_s"
+                    app:layout_constraintTop_toBottomOf="@+id/vA_1" />
+
+                <TextView
+                    android:id="@+id/vB_2"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@color/seikai"
+                    android:gravity="center"
+                    android:text="B-2"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vB_1"
+                    app:layout_constraintTop_toBottomOf="@+id/vA_2" />
+
+                <TextView
+                    android:id="@+id/vB_3"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="B-3"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vB_2"
+                    app:layout_constraintTop_toBottomOf="@+id/vA_3" />
+
+                <TextView
+                    android:id="@+id/vB_4"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="B-4"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vB_3"
+                    app:layout_constraintTop_toBottomOf="@+id/vA_4" />
+
+                <TextView
+                    android:id="@+id/vB_5"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="B-5"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vB_4"
+                    app:layout_constraintTop_toBottomOf="@+id/vA_5" />
+
+                <TextView
+                    android:id="@+id/vC_1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="C-1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/sita_s"
+                    app:layout_constraintTop_toBottomOf="@+id/vB_1" />
+
+                <TextView
+                    android:id="@+id/vC_2"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="C-2"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vC_1"
+                    app:layout_constraintTop_toBottomOf="@+id/vB_2" />
+
+                <TextView
+                    android:id="@+id/vC_3"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@color/seikai"
+                    android:gravity="center"
+                    android:text="C-3"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vC_2"
+                    app:layout_constraintTop_toBottomOf="@+id/vB_3" />
+
+                <TextView
+                    android:id="@+id/vC_4"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="C-4"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vC_3"
+                    app:layout_constraintTop_toBottomOf="@+id/vB_4" />
+
+                <TextView
+                    android:id="@+id/vC_5"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="C-5"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vC_4"
+                    app:layout_constraintTop_toBottomOf="@+id/vB_5" />
+
+                <TextView
+                    android:id="@+id/vD_1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="D-1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/awabeni_s"
+                    app:layout_constraintTop_toBottomOf="@+id/vC_1" />
+
+                <TextView
+                    android:id="@+id/vD_2"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="D-2"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vD_1"
+                    app:layout_constraintTop_toBottomOf="@+id/vC_2" />
+
+                <TextView
+                    android:id="@+id/vD_3"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="D-3"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vD_2"
+                    app:layout_constraintTop_toBottomOf="@+id/vC_3" />
+
+                <TextView
+                    android:id="@+id/vD_4"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@color/seikai"
+                    android:gravity="center"
+                    android:text="D-4"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vD_3"
+                    app:layout_constraintTop_toBottomOf="@+id/vC_4" />
+
+                <TextView
+                    android:id="@+id/vD_5"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="D-5"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vD_4"
+                    app:layout_constraintTop_toBottomOf="@+id/vC_5" />
+
+                <TextView
+                    android:id="@+id/vE_1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="E-1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/awasiro_s"
+                    app:layout_constraintTop_toBottomOf="@+id/vD_1" />
+
+                <TextView
+                    android:id="@+id/vE_2"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="E-2"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_1"
+                    app:layout_constraintTop_toBottomOf="@+id/vD_2" />
+
+                <TextView
+                    android:id="@+id/vE_3"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="E-3"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_2"
+                    app:layout_constraintTop_toBottomOf="@+id/vD_3" />
+
+                <TextView
+                    android:id="@+id/vE_4"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="E-4"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_3"
+                    app:layout_constraintTop_toBottomOf="@+id/vD_4" />
+
+                <TextView
+                    android:id="@+id/vE_5"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:background="@color/seikai"
+                    android:gravity="center"
+                    android:text="E-5"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_4"
+                    app:layout_constraintTop_toBottomOf="@+id/vD_5" />
+
+                <TextView
+                    android:id="@+id/vc_1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="vc_1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vA_5"
+                    app:layout_constraintTop_toBottomOf="@+id/seitouritsu" />
+
+                <TextView
+                    android:id="@+id/vc_1_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_1"
+                    app:layout_constraintTop_toBottomOf="@+id/seitouritsu" />
+
+                <TextView
+                    android:id="@+id/vc_2"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="vc_2"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vB_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_1" />
+                <TextView
+                    android:id="@+id/vc_2_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_2"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_1_per" />
+
+                <TextView
+                    android:id="@+id/vc_3"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="vc_3"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vC_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_2" />
+                <TextView
+                    android:id="@+id/vc_3_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_3"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_2_per" />
+
+                <TextView
+                    android:id="@+id/vc_4"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="vc_4"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vD_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_3" />
+                <TextView
+                    android:id="@+id/vc_4_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_4"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_3_per" />
+
+                <TextView
+                    android:id="@+id/vc_5"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="vc_5"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_4" />
+                <TextView
+                    android:id="@+id/vc_5_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_4_per" />
+
+                <TextView
+                    android:id="@+id/vc_t"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="vc_t"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_5" />
+
+                <TextView
+                    android:id="@+id/vc_t_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="全体の正答率"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toStartOf="@+id/vc_t"
+                    app:layout_constraintTop_toBottomOf="@+id/vE_5" />
+
+                <TextView
+                    android:id="@+id/vc_t_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="%"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_t"
+                    app:layout_constraintTop_toTopOf="@+id/vc_t" />
+
+                <TextView
+                    android:id="@+id/score_vc"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="score"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vE_5"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_t" />
+
+                <TextView
+                    android:id="@+id/vc_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:text="貴方の点数は"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toStartOf="@+id/score_vc"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_t_text" />
+
+                <TextView
+                    android:id="@+id/score_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:gravity="center"
+                    android:text="点"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/score_vc"
+                    app:layout_constraintTop_toTopOf="@+id/score_vc" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/next_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:onClick="onNextResult_confusion_Tapped"
+                    android:text="もっと詳しく見てみる"
+                    android:textSize="48sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

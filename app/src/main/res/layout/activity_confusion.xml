@@ -6,257 +6,343 @@
     android:layout_height="wrap_content"
     tools:context="com.example.tene.zetsushin.confusion">
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="436dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TableRow>
 
 
-            <EditText
-                android:layout_height="fill_parent"
-                android:text=" "
-                android:layout_span="2"/>
+                <EditText
+                    android:layout_height="fill_parent"
+                    android:layout_span="2"
+                    android:text=" " />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="5"
+                        android:text="　　　            混合行列         　　" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="紅舌" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="紫斑舌" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="舌尖紅" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="淡紅" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="淡白" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_height="fill_parent"
+                    android:text="クラス別の\n正答率(%)" />
+            </TableRow>
+
+
+            <TableRow>
 
                 <EditText
                     android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="  " />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_span="5"
-                    android:text="　　　　    症例-解答   　　　　" />
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紅舌"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紫斑舌"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="舌尖紅"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="淡紅"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="淡白"
+                        android:textSize="24sp" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="紅舌" />
+                        android:orientation="vertical">
 
-                    <EditText
+                        <EditText
+                            android:id="@+id/vA_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A-1"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vB_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B-1"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vC_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-1"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vD_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D-1"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vE_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-1"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="紫斑舌" />
+                        android:orientation="vertical">
 
-                    <EditText
+                        <EditText
+                            android:id="@+id/vA_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A-2"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vB_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B-2"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vC_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-2"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vD_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D-2"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vE_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-2"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="舌尖紅" />
+                        android:orientation="vertical">
 
-                    <EditText
+                        <EditText
+                            android:id="@+id/vA_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A-3"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vB_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B-3"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vC_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-3"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vD_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D-3"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vE_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-3"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="淡紅" />
+                        android:orientation="vertical">
 
-                    <EditText
+                        <EditText
+                            android:id="@+id/vA_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A-4"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vB_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B-4"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vC_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-4"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vD_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D-4"
+                            android:textSize="24sp" />
+
+                        <EditText
+                            android:id="@+id/vE_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-4"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="淡白" />
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <EditText
+                            android:id="@+id/vA_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A-5"
+                            android:textSize="24sp" />
 
-            </LinearLayout>
-            <EditText
-                android:layout_height="fill_parent"
-                android:text="クラス別の正答率" />
-        </TableRow>
+                        <EditText
+                            android:id="@+id/vB_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B-5"
+                            android:textSize="24sp" />
 
+                        <EditText
+                            android:id="@+id/vC_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-5"
+                            android:textSize="24sp" />
 
-        <TableRow>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:text="\n\n症\n例\n|\n正\n解" />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/vD_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D-5"
+                            android:textSize="24sp" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="紅舌" />
+                        <EditText
+                            android:id="@+id/vE_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-5"
+                            android:textSize="24sp" />
+                    </LinearLayout>
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="紫斑舌" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="舌尖紅" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="淡紅" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="淡白" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/v1_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1-1" />
-
-                    <EditText
-                        android:id="@+id/v1_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1-2" />
-
-                    <EditText
-                        android:id="@+id/v_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1-3" />
-
-                    <EditText
-                        android:id="@+id/v_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1-4" />
-
-                    <EditText
-                        android:id="@+id/v1_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1-5" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/v2_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2-1" />
-
-                    <EditText
-                        android:id="@+id/v2_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2-2" />
-
-                    <EditText
-                        android:id="@+id/v2_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2-3" />
-
-                    <EditText
-                        android:id="@+id/v2_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2-4" />
-
-                    <EditText
-                        android:id="@+id/v2_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2-5" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/v3_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3-1" />
-
-                    <EditText
-                        android:id="@+id/v3_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3-2" />
-
-                    <EditText
-                        android:id="@+id/v3_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3-3" />
-
-                    <EditText
-                        android:id="@+id/v3_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3-4" />
-
-                    <EditText
-                        android:id="@+id/v3_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3-5" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/v4_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4-1" />
-
-                    <EditText
-                        android:id="@+id/v4_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4-2" />
-
-                    <EditText
-                        android:id="@+id/v4_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4-3" />
-
-                    <EditText
-                        android:id="@+id/v4_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4-4" />
-
-                    <EditText
-                        android:id="@+id/v4_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4-5" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -265,93 +351,83 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/v5_1"
+                        android:id="@+id/vc_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5-1" />
+                        android:text="vc_1"
+                        android:textSize="24sp" />
 
                     <EditText
-                        android:id="@+id/v5_2"
+                        android:id="@+id/vc_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5-2" />
+                        android:text="vc_2"
+                        android:textSize="24sp" />
 
                     <EditText
-                        android:id="@+id/v5_3"
+                        android:id="@+id/vc_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5-3" />
+                        android:text="vc_3"
+                        android:textSize="24sp" />
 
                     <EditText
-                        android:id="@+id/v5_4"
+                        android:id="@+id/vc_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5-4" />
+                        android:text="vc_4"
+                        android:textSize="24sp" />
 
                     <EditText
-                        android:id="@+id/v5_5"
+                        android:id="@+id/vc_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5-5" />
+                        android:text="vc_5"
+                        android:textSize="24sp" />
                 </LinearLayout>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/vc_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vc_1" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/vc_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vc_2" />
+            <TableRow>
 
-            <EditText
-                android:id="@+id/vc_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vc_3" />
+                <EditText
+                    android:layout_column="2"
+                    android:text="全体の正答率"
+                    android:textAlignment="textEnd" />
 
-            <EditText
-                android:id="@+id/vc_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vc_4" />
+                <EditText
+                    android:id="@+id/vc_t"
+                    android:layout_column="3"
+                    android:text="vc_t"
+                    android:textAlignment="textEnd" />
 
-            <EditText
-                android:id="@+id/vc_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="vc_5" />
-            </LinearLayout>
+                <EditText
+                    android:layout_column="4"
+                    android:text="%"
+                    android:textAlignment="textStart" />
+            </TableRow>
 
+            <TableRow>
 
+                <EditText
+                    android:layout_column="2"
+                    android:text="貴方の点数は"
+                    android:textAlignment="textEnd" />
 
-        </TableRow>
-        <TableRow>
+                <EditText
+                    android:id="@+id/score_vc"
+                    android:layout_column="3"
+                    android:text="vc_t"
+                    android:textAlignment="textEnd" />
 
-            <EditText
-                android:layout_column="2"
-                android:text="全体の正答率"
-                android:textAlignment="textEnd" />
+                <EditText
+                    android:layout_column="4"
+                    android:text="点"
+                    android:textAlignment="textStart" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/vc_t"
-                android:layout_column="3"
-                android:text="vc_t"
-                android:textAlignment="textEnd" />
-            <EditText
-                android:layout_column="4"
-                android:text="%"
-                android:textAlignment="textStart" />
-        </TableRow>
-    </TableLayout>
+        </TableLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
