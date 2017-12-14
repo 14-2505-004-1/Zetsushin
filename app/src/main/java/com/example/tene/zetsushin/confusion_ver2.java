@@ -325,14 +325,28 @@ public class confusion_ver2 extends AppCompatActivity {
 
         TextView in_vc_1 = (TextView) findViewById(R.id.vc_1);
         in_vc_1.setText(String.valueOf(A_x[0]*100/3));
+        TextView in_vc_1_bun = (TextView) findViewById(R.id.vc_1_bun);
+        in_vc_1_bun.setText("("+String.valueOf(A_x[0])+"/3)");
+
         TextView in_vc_2 = (TextView) findViewById(R.id.vc_2);
         in_vc_2.setText(String.valueOf(B_x[1]*100/8));
+        TextView in_vc_2_bun = (TextView) findViewById(R.id.vc_2_bun);
+        in_vc_2_bun.setText("("+String.valueOf(B_x[1])+"/8)");
+
         TextView in_vc_3 = (TextView) findViewById(R.id.vc_3);
         in_vc_3.setText(String.valueOf(C_x[2]*100));
+        TextView in_vc_3_bun = (TextView) findViewById(R.id.vc_3_bun);
+        in_vc_3_bun.setText("("+String.valueOf(C_x[2])+"/1)");
+
         TextView in_vc_4 = (TextView) findViewById(R.id.vc_4);
         in_vc_4.setText(String.valueOf(D_x[3]*100/7));
+        TextView in_vc_4_bun = (TextView) findViewById(R.id.vc_4_bun);
+        in_vc_4_bun.setText("("+String.valueOf(D_x[3])+"/7)");
+
         TextView in_vc_5 = (TextView) findViewById(R.id.vc_5);
         in_vc_5.setText(String.valueOf(E_x[4]*100));
+        TextView in_vc_5_bun = (TextView) findViewById(R.id.vc_5_bun);
+        in_vc_5_bun.setText("("+String.valueOf(E_x[4])+"/1)");
 
 
         TextView in_vc_t = (TextView) findViewById(R.id.vc_t);
@@ -362,6 +376,8 @@ public class confusion_ver2 extends AppCompatActivity {
 
         TextView in_vc_score = (TextView) findViewById(R.id.score_vc);
         in_vc_score.setText(String.valueOf(sum));
+
+
 
 
     }

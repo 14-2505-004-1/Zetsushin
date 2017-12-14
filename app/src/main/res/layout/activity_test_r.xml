@@ -43,7 +43,7 @@
                     android:layout_width="491dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="問いに示された舌画像を見て、５つの選択肢の中から正しいと思われる選択肢を １つ選んでください。"
+                    android:text="前の問題と選択肢をランダムに並び替えています。\n問いに示された舌画像を見て、５つの選択肢の中から正しいと思われる選択肢を １つ選んでください。"
                     android:textSize="30sp" />
 
                 <TextView
@@ -360,7 +360,7 @@
                         android:layout_marginEnd="28dp"
                         android:layout_marginStart="32dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/q3_image_r">
+                        app:layout_constraintStart_toEndOf="@+id/q4_image_r">
 
                         <RadioButton
                             android:id="@+id/radioButton_4_r"

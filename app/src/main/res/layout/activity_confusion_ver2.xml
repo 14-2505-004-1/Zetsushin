@@ -28,7 +28,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="345dp"
-                    android:text="解答"
+                    android:text="読影結果(解答)"
                     android:textSize="36sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -445,6 +445,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/seitouritsu" />
 
                 <TextView
+                    android:id="@+id/vc_1_bun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="(vc_1_bun)"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_1_per"
+                    app:layout_constraintTop_toBottomOf="@+id/seitouritsu" />
+
+                <TextView
                     android:id="@+id/vc_2"
                     android:layout_width="120px"
                     android:layout_height="120px"
@@ -463,6 +474,17 @@
                     android:textSize="30sp"
                     app:layout_constraintStart_toEndOf="@+id/vc_2"
                     app:layout_constraintTop_toBottomOf="@+id/vc_1_per" />
+
+                <TextView
+                    android:id="@+id/vc_2_bun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="(vc_2_bun)"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_2_per"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_1_bun" />
 
                 <TextView
                     android:id="@+id/vc_3"
@@ -485,6 +507,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/vc_2_per" />
 
                 <TextView
+                    android:id="@+id/vc_3_bun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="(vc_3_bun)"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_3_per"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_2_bun" />
+
+                <TextView
                     android:id="@+id/vc_4"
                     android:layout_width="120px"
                     android:layout_height="120px"
@@ -505,6 +538,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/vc_3_per" />
 
                 <TextView
+                    android:id="@+id/vc_4_bun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="(vc_4_bun)"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_4_per"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_3_bun" />
+
+                <TextView
                     android:id="@+id/vc_5"
                     android:layout_width="120px"
                     android:layout_height="120px"
@@ -523,6 +567,17 @@
                     android:textSize="30sp"
                     app:layout_constraintStart_toEndOf="@+id/vc_5"
                     app:layout_constraintTop_toBottomOf="@+id/vc_4_per" />
+
+                <TextView
+                    android:id="@+id/vc_5_bun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="(vc_5_bun)"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_5_per"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_4_bun" />
 
                 <TextView
                     android:id="@+id/vc_t"
@@ -587,6 +642,7 @@
                     android:textSize="30sp"
                     app:layout_constraintStart_toEndOf="@+id/score_vc"
                     app:layout_constraintTop_toTopOf="@+id/score_vc" />
+
 
 
             </android.support.constraint.ConstraintLayout>
