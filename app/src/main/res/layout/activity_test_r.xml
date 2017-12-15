@@ -1309,7 +1309,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/q15_image" />
+                        app:srcCompat="@drawable/q5_image" />
 
                     <RadioGroup
                         android:id="@+id/q15_rg_r"

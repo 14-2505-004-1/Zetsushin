@@ -214,7 +214,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:background="@color/not_not"
-                    android:text="確信的な誤り"
+                    android:text="2回とも同じ誤り"
                     android:textSize="30sp"
                     app:layout_constraintStart_toEndOf="@+id/textView4"
                     app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -1556,6 +1556,7 @@
                             android:id="@+id/radioButton_r_q8"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
+                            android:background="@color/seikai"
                             android:text="1.淡紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
@@ -1565,7 +1566,6 @@
                             android:id="@+id/radioButton2_r_q8"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:background="@color/seikai"
                             android:text="2.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
@@ -1736,7 +1736,6 @@
                             android:id="@+id/radioButton2_r_q9"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:background="@color/seikai"
                             android:text="2.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
@@ -1753,6 +1752,7 @@
                             android:id="@+id/radioButton4_r_q9"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
+                            android:background="@color/seikai"
                             android:text="4.淡紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
@@ -2266,7 +2266,7 @@
                             android:id="@+id/radioButton4_r_q12"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.紅舌"
+                            android:text="4.淡白"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -2274,7 +2274,7 @@
                             android:id="@+id/radioButton5_r_q12"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.淡白"
+                            android:text="5.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
                     </RadioGroup>
@@ -2410,8 +2410,7 @@
                             android:id="@+id/radioButton_r_q13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:background="@color/seikai"
-                            android:text="1.淡紅"
+                            android:text="1.舌尖紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -2420,7 +2419,7 @@
                             android:id="@+id/radioButton2_r_q13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紅舌"
+                            android:text="2.紫斑舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -2428,7 +2427,8 @@
                             android:id="@+id/radioButton3_r_q13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.舌尖紅"
+                            android:background="@color/seikai"
+                            android:text="3.淡紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -2444,7 +2444,7 @@
                             android:id="@+id/radioButton5_r_q13"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.紫斑舌"
+                            android:text="5.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
                     </RadioGroup>
@@ -2581,7 +2581,7 @@
                             android:id="@+id/radioButton_r_q14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="1.舌尖紅"
+                            android:text="1.淡紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -2590,7 +2590,7 @@
                             android:id="@+id/radioButton2_r_q14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="2.紅舌"
+                            android:text="2.舌尖紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -2607,12 +2607,183 @@
                             android:id="@+id/radioButton4_r_q14"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="4.紫斑舌"
+                            android:text="4.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
                         <RadioButton
                             android:id="@+id/radioButton5_r_q14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3_q15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q15_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問15"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/q15_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/q15_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q15_image" />
+
+                    <TextView
+                        android:id="@+id/textView20_q15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:text="1回目"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/q15_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q15_rg_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintStart_toEndOf="@+id/q15_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_q15">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="4.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView20_2_q15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:text="2回目"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q15_rg_r"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q15_rg_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q15_rg_r"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_2_q15">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_r_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_r_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_r_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="3.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_r_q15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_r_q15"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
                             android:text="5.淡紅"
@@ -2624,8 +2795,860 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3_q16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q16_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問16"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/q16_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/q16_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q16_image" />
+
+                    <TextView
+                        android:id="@+id/textView20_q16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:text="1回目"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/q16_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q16_rg_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintStart_toEndOf="@+id/q16_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_q16">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
 
 
+                        <RadioButton
+                            android:id="@+id/radioButton2_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="3.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView20_2_q16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:text="2回目"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q16_rg_r"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q16_rg_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q16_rg_r"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_2_q16">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_r_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_r_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_r_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="3.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_r_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_r_q16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3_q17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q17_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問17"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/q17_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/q17_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q17_image" />
+
+                    <TextView
+                        android:id="@+id/textView20_q17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:text="1回目"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/q17_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q17_rg_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintStart_toEndOf="@+id/q17_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_q17">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="5.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView20_2_q17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:text="2回目"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q17_rg_r"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q17_rg_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q17_rg_r"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_2_q17">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_r_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_r_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="2.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_r_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_r_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_r_q17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3_q18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q18_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問18"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/q18_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/q18_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q18_image" />
+
+                    <TextView
+                        android:id="@+id/textView20_q18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:text="1回目"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/q18_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q18_rg_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintStart_toEndOf="@+id/q18_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_q18">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="3.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView20_2_q18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:text="2回目"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q18_rg_r"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q18_rg_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q18_rg_r"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_2_q18">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_r_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_r_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="2.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_r_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_r_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_r_q18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3_q19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q19_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問19"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/q19_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/q19_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q19_image" />
+
+                    <TextView
+                        android:id="@+id/textView20_q19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:text="1回目"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/q19_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q19_rg_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintStart_toEndOf="@+id/q19_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_q19">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="2.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView20_2_q19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:text="2回目"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q19_rg_r"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q19_rg_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q19_rg_r"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_2_q19">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_r_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_r_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="2.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_r_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_r_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_r_q19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3_q20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/q20_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="問20"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/q20_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/q20_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/q20_image" />
+
+                    <TextView
+                        android:id="@+id/textView20_q20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:text="1回目"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/q20_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q20_rg_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintStart_toEndOf="@+id/q20_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_q20">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="2.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="3.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView20_2_q20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:text="2回目"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q20_rg_r"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/q20_rg_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="auto"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/q20_rg_r"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20_2_q20">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_r_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="1.淡白"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2_r_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:background="@color/seikai"
+                            android:text="2.淡紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3_r_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="3.紅舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4_r_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="4.紫斑舌"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5_r_q20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:text="5.舌尖紅"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

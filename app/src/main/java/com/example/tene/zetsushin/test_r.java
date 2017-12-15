@@ -597,12 +597,12 @@ public class test_r extends AppCompatActivity {
         startActivity(intent);
     }
     /*
-
-     ここまで
-
-     */
-    @Override
+@Override
     public void onBackPressed(){
 
     }
+     ここまで
+
+     */
+
 }
