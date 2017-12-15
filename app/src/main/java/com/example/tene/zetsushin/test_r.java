@@ -601,4 +601,8 @@ public class test_r extends AppCompatActivity {
      ここまで
 
      */
+    @Override
+    public void onBackPressed(){
+
+    }
 }

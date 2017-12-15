@@ -33,14 +33,13 @@
             android:name=".test_r"
             android:label="テスト問題1(リバース)" />
         <activity
-            android:name=".result"
-            android:label="採点結果" />
+            android:name=".result_all"
+            android:label="採点結果"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".confusion_ver2"
             android:label="読影結果の総括"
-            android:screenOrientation="landscape">
-
-        </activity>
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

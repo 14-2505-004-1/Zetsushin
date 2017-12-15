@@ -351,6 +351,8 @@ public class confusion_ver2 extends AppCompatActivity {
 
         TextView in_vc_t = (TextView) findViewById(R.id.vc_t);
         in_vc_t.setText(String.valueOf((A_x[0]+B_x[1]+C_x[2]+D_x[3]+E_x[4])*100/20));
+        TextView in_vc_t_bun = (TextView) findViewById(R.id.vc_t_bun);
+        in_vc_t_bun.setText("("+String.valueOf(A_x[0]+B_x[1]+C_x[2]+D_x[3]+E_x[4])+"/20)");
 
         int sum = 0;
         if(q1_a==q1_1_rb_id)    sum=sum+5;
@@ -384,7 +386,7 @@ public class confusion_ver2 extends AppCompatActivity {
 
     public void onNextResult_confusion_Tapped(View view) {
         Intent intent_test = getIntent();
-        Intent intent = new Intent(this, result.class);
+        Intent intent = new Intent(this, result_all.class);
 
 
         intent.putExtra("q1_answer",intent_test.getIntExtra("q1_answer",0));
@@ -672,5 +674,9 @@ public class confusion_ver2 extends AppCompatActivity {
 
 
 /**/        startActivity(intent);
+    }
+    @Override
+    public void onBackPressed(){
+
     }
 }

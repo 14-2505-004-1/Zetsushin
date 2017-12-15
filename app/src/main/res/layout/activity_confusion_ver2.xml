@@ -601,6 +601,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/vc_t"
                     app:layout_constraintTop_toBottomOf="@+id/vE_5" />
 
+
                 <TextView
                     android:id="@+id/vc_t_per"
                     android:layout_width="wrap_content"
@@ -610,6 +611,17 @@
                     android:textSize="30sp"
                     app:layout_constraintStart_toEndOf="@+id/vc_t"
                     app:layout_constraintTop_toTopOf="@+id/vc_t" />
+
+                <TextView
+                    android:id="@+id/vc_t_bun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="(vc_t_bun)"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/vc_t_per"
+                    app:layout_constraintTop_toBottomOf="@+id/vc_5_bun" />
 
                 <TextView
                     android:id="@+id/score_vc"
