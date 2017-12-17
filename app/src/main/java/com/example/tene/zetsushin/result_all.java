@@ -316,106 +316,6 @@ int sum_r = 0;
         if(q3_a==q3_rb4_id)    sum=sum+5;if(q4_a_r==q4_rb2_id_r)    sum_r=sum_r+5;
 
 
-        int q4_a = intent.getIntExtra("q4_answer",0);
-        int q4_rb1_id = intent.getIntExtra("q4_rb1_setId",0);
-        int q4_rb2_id = intent.getIntExtra("q4_rb2_setId",0);
-        int q4_rb3_id = intent.getIntExtra("q4_rb3_setId",0);
-        int q4_rb4_id = intent.getIntExtra("q4_rb4_setId",0);
-        int q4_rb5_id = intent.getIntExtra("q4_rb5_setId",0);
-
-        RadioGroup rg_q4_r=(RadioGroup) findViewById(R.id.q4_rg_r);
-
-        RadioButton rb_q4_1 = (RadioButton)findViewById(R.id.radioButton_q4);
-        RadioButton rb_q4_2 = (RadioButton)findViewById(R.id.radioButton2_q4);
-        RadioButton rb_q4_3 = (RadioButton)findViewById(R.id.radioButton3_q4);
-        RadioButton rb_q4_4 = (RadioButton)findViewById(R.id.radioButton4_q4);
-        RadioButton rb_q4_5 = (RadioButton)findViewById(R.id.radioButton5_q4);
-        if(q4_a==q4_rb1_id) {
-            rg_q4_r.check(R.id.radioButton_q4);
-            rb_q4_2.setEnabled(false);
-            rb_q4_3.setEnabled(false);
-            rb_q4_4.setEnabled(false);
-            rb_q4_5.setEnabled(false);
-        }else if(q4_a==q4_rb2_id){
-            rb_q4_1.setEnabled(false);
-            rg_q4_r.check(R.id.radioButton2_q4);
-            rb_q4_3.setEnabled(false);
-            rb_q4_4.setEnabled(false);
-            rb_q4_5.setEnabled(false);
-        }else if(q4_a==q4_rb3_id){
-            rb_q4_1.setEnabled(false);
-            rb_q4_2.setEnabled(false);
-            rg_q4_r.check(R.id.radioButton3_q4);
-            rb_q4_4.setEnabled(false);
-            rb_q4_5.setEnabled(false);
-        }else if(q4_a==q4_rb4_id){
-            rb_q4_1.setEnabled(false);
-            rb_q4_2.setEnabled(false);
-            rb_q4_3.setEnabled(false);
-            rg_q4_r.check(R.id.radioButton4_q4);
-            rb_q4_5.setEnabled(false);
-        }else if(q4_a==q4_rb5_id){
-            rb_q4_1.setEnabled(false);
-            rb_q4_2.setEnabled(false);
-            rb_q4_3.setEnabled(false);
-            rb_q4_4.setEnabled(false);
-            rg_q4_r.check(R.id.radioButton5_q4);
-        }
-        int q9_a_r = intent.getIntExtra("q9_answer_r",0);
-        int q9_rb1_id_r = intent.getIntExtra("q9_rb1_setId_r",0);
-        int q9_rb2_id_r = intent.getIntExtra("q9_rb2_setId_r",0);
-        int q9_rb3_id_r = intent.getIntExtra("q9_rb3_setId_r",0);
-        int q9_rb4_id_r = intent.getIntExtra("q9_rb4_setId_r",0);
-        int q9_rb5_id_r = intent.getIntExtra("q9_rb5_setId_r",0);
-        RadioGroup rg_q9_r1=(RadioGroup) findViewById(R.id.q4_rg_r1);
-/*^^;q4→r11*/        rg_q9_r1.check(q9_a_r);
-        RadioButton rb_q9_1_r = (RadioButton)findViewById(R.id.radioButton_r_q4);
-        RadioButton rb_q9_2_r = (RadioButton)findViewById(R.id.radioButton2_r_q4);
-        RadioButton rb_q9_3_r = (RadioButton)findViewById(R.id.radioButton3_r_q4);
-        RadioButton rb_q9_4_r = (RadioButton)findViewById(R.id.radioButton4_r_q4);
-        RadioButton rb_q9_5_r = (RadioButton)findViewById(R.id.radioButton5_r_q4);
-        if(q9_a_r==q9_rb1_id_r) {
-            rg_q9_r1.check(R.id.radioButton_r_q4);
-            rb_q9_2_r.setEnabled(false);
-            rb_q9_3_r.setEnabled(false);
-            rb_q9_4_r.setEnabled(false);
-            rb_q9_5_r.setEnabled(false);
-        }else if(q9_a_r==q9_rb2_id_r){
-            rb_q9_1_r.setEnabled(false);
-            rg_q9_r1.check(R.id.radioButton2_r_q4);
-            rb_q9_3_r.setEnabled(false);
-            rb_q9_4_r.setEnabled(false);
-            rb_q9_5_r.setEnabled(false);
-        }else if(q9_a_r==q9_rb3_id_r){
-            rb_q9_1_r.setEnabled(false);
-            rb_q9_2_r.setEnabled(false);
-            rg_q9_r1.check(R.id.radioButton3_r_q4);
-            rb_q9_4_r.setEnabled(false);
-            rb_q9_5_r.setEnabled(false);
-        }else if(q9_a_r==q9_rb4_id_r){
-            rb_q9_1_r.setEnabled(false);
-            rb_q9_2_r.setEnabled(false);
-            rb_q9_3_r.setEnabled(false);
-            rg_q9_r1.check(R.id.radioButton4_r_q4);
-            rb_q9_5_r.setEnabled(false);
-        }else if(q9_a_r==q9_rb5_id_r){
-            rb_q9_1_r.setEnabled(false);
-            rb_q9_2_r.setEnabled(false);
-            rb_q9_3_r.setEnabled(false);
-            rb_q9_4_r.setEnabled(false);
-            rg_q9_r1.check(R.id.radioButton5_r_q4);
-        }
-
-        if(q4_a==q4_rb1_id && q9_a_r==q9_rb4_id_r
-                || q4_a==q4_rb3_id && q9_a_r==q9_rb5_id_r
-                || q4_a==q4_rb4_id && q9_a_r==q9_rb1_id_r
-                || q4_a==q4_rb5_id && q9_a_r==q9_rb3_id_r){
-            ConstraintLayout layout_q4 = (ConstraintLayout) findViewById(R.id.q4_back);
-            layout_q4.setBackgroundResource(R.color.not_not);
-        }
-
-        if(q4_a==q4_rb2_id)    sum=sum+5;if(q9_a_r==q9_rb2_id_r)    sum_r=sum_r+5;
-
         int q5_a = intent.getIntExtra("q5_answer",0);
         int q5_rb1_id = intent.getIntExtra("q5_rb1_setId",0);
         int q5_rb2_id = intent.getIntExtra("q5_rb2_setId",0);
@@ -962,11 +862,11 @@ int sum_r = 0;
             rg_q10_r.check(R.id.radioButton5_q10);
         }
         int q1_a_r = intent.getIntExtra("q1_answer_r",0);
-        int q1_rb1_id_r = intent.getIntExtra("q1_1_setId_r",0);
-        int q1_rb2_id_r = intent.getIntExtra("q1_2_setId_r",0);
-        int q1_rb3_id_r = intent.getIntExtra("q1_3_setId_r",0);
-        int q1_rb4_id_r = intent.getIntExtra("q1_4_setId_r",0);
-        int q1_rb5_id_r = intent.getIntExtra("q1_5_setId_r",0);
+        int q1_rb1_id_r = intent.getIntExtra("q1_rb1_setId_r",0);
+        int q1_rb2_id_r = intent.getIntExtra("q1_rb2_setId_r",0);
+        int q1_rb3_id_r = intent.getIntExtra("q1_rb3_setId_r",0);
+        int q1_rb4_id_r = intent.getIntExtra("q1_rb4_setId_r",0);
+        int q1_rb5_id_r = intent.getIntExtra("q1_rb5_setId_r",0);
         RadioGroup rg_q1_r1=(RadioGroup) findViewById(R.id.q10_rg_r1);
 /*^^;q10→r11*/        rg_q1_r1.check(q1_a_r);
         RadioButton rb_q1_1_r = (RadioButton)findViewById(R.id.radioButton_r_q10);

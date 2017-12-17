@@ -533,11 +533,11 @@ public class confusion_ver2 extends AppCompatActivity {
 
 /**/
         intent.putExtra("q1_answer_r",intent_test.getIntExtra("q1_answer_r",0));
-        intent.putExtra("q1_1_setId_r",intent_test.getIntExtra("q1_1_setId_r",0));
-        intent.putExtra("q1_2_setId_r",intent_test.getIntExtra("q1_2_setId_r",0));
-        intent.putExtra("q1_3_setId_r",intent_test.getIntExtra("q1_3_setId_r",0));
-        intent.putExtra("q1_4_setId_r",intent_test.getIntExtra("q1_4_setId_r",0));
-        intent.putExtra("q1_5_setId_r",intent_test.getIntExtra("q1_5_setId_r",0));
+        intent.putExtra("q1_rb1_setId_r",intent_test.getIntExtra("q1_1_setId_r",0));
+        intent.putExtra("q1_rb2_setId_r",intent_test.getIntExtra("q1_2_setId_r",0));
+        intent.putExtra("q1_rb3_setId_r",intent_test.getIntExtra("q1_3_setId_r",0));
+        intent.putExtra("q1_rb4_setId_r",intent_test.getIntExtra("q1_4_setId_r",0));
+        intent.putExtra("q1_rb5_setId_r",intent_test.getIntExtra("q1_5_setId_r",0));
 
         intent.putExtra("q2_answer_r",intent_test.getIntExtra("q2_answer_r",0));
         intent.putExtra("q2_rb1_setId_r",intent_test.getIntExtra("q2_rb1_setId_r",0));
