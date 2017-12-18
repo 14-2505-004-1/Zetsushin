@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="ログイン画面">
+            android:label="舌神">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,7 +38,7 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".confusion_ver2"
-            android:label="読影結果の総括"
+            android:label="テスト問題1の読影結果の総括"
             android:screenOrientation="landscape"/>
     </application>
 

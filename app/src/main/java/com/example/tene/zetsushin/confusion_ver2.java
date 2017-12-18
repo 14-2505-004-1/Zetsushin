@@ -457,8 +457,8 @@ public class confusion_ver2 extends AppCompatActivity {
         intent.putExtra("q10_rb1_setId",intent_test.getIntExtra("q10_rb1_setId",0));
         intent.putExtra("q10_rb2_setId",intent_test.getIntExtra("q10_rb2_setId",0));
         intent.putExtra("q10_rb3_setId",intent_test.getIntExtra("q10_rb3_setId",0));
-        intent.putExtra("q10_rb4_setId",intent_test.getIntExtra("q10_rb4setId",0));
-        intent.putExtra("q10_rb5_setId",intent_test.getIntExtra("q10_rb5setId",0));
+        intent.putExtra("q10_rb4_setId",intent_test.getIntExtra("q10_rb4_setId",0));
+        intent.putExtra("q10_rb5_setId",intent_test.getIntExtra("q10_rb5_setId",0));
 
         intent.putExtra("q11_answer",intent_test.getIntExtra("q11_answer",0));
         intent.putExtra("q11_rb1_setId",intent_test.getIntExtra("q11_rb1_setId",0));
