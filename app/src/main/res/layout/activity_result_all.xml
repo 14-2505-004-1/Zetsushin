@@ -3274,8 +3274,7 @@
                             android:id="@+id/radioButton2_r_q18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:background="@color/seikai"
-                            android:text="2.紫斑舌"
+                            android:text="2.紅舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -3283,7 +3282,8 @@
                             android:id="@+id/radioButton3_r_q18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="3.紅舌"
+                            android:background="@color/seikai"
+                            android:text="3.紫斑舌"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
