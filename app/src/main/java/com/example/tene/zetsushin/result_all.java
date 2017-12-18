@@ -825,7 +825,7 @@ int sum_r = 0;
             layout_q8.setBackgroundResource(R.color.not_not);
         }
 
-        if(q8_a==q8_rb5_id)    sum=sum+5;if(q17_a_r==q17_rb1_id_r)    sum_r=sum_r+5;
+        if(q8_a==q8_rb4_id)    sum=sum+5;if(q17_a_r==q17_rb1_id_r)    sum_r=sum_r+5;
 
         int q9_a = intent.getIntExtra("q9_answer",0);
         int q9_rb1_id = intent.getIntExtra("q9_rb1_setId",0);
