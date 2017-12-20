@@ -3265,7 +3265,7 @@
                             android:id="@+id/radioButton_r_q18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="1.淡紅"
+                            android:text="1.舌尖紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
 
@@ -3299,7 +3299,7 @@
                             android:id="@+id/radioButton5_r_q18"
                             android:layout_width="wrap_content"
                             android:layout_height="80dp"
-                            android:text="5.舌尖紅"
+                            android:text="5.淡紅"
                             android:textColor="@android:color/black"
                             android:textSize="24sp" />
                     </RadioGroup>
